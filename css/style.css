@@ -9,3 +9,26 @@
 .color3{
     color: rgb(178 94 45);
 }
+
+.negro{
+    background-image: url(../Imagenes/Brand\ pattern\ for\ sustainable\ nutrition\ business_.jpg);
+}
+.header{
+    display: flex;
+    flex-direction: row;
+}
+.header1{
+    background-color: rgb(178, 94, 45);
+    width: 420px;
+    height: 50px;
+}
+.header2{
+    background-color: rgb(178, 94, 45);;
+    width: 420px;
+    height: 50px;
+}
+.header3{
+    background-color: rgb(178, 94, 45);
+    width: 420px;
+    height: 50px;
+}
