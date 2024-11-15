@@ -11,8 +11,9 @@
 }
 
 .negro{
-    background-image: url(../Imagenes/Brand\ pattern\ for\ sustainable\ nutrition\ business_.jpg);
+    background-image: url(../Imagenes/fondo.jpg);
 }
+
 .header{
     display: flex;
     flex-direction: row;
