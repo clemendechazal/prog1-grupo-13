@@ -55,19 +55,17 @@ body{
     color: rgb(233 217 194);
   }
 
-
 .lista {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 20px;
-    width: 25%;
+    width: 100%;
     
 }
 
-
-article {
+article.index {
     background: rgb(94 125 109);
     border-radius: 8px;
     padding: 10px;
@@ -97,3 +95,4 @@ button {
     font-size: 16px;
     cursor: pointer;
 }
+
