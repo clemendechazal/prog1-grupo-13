@@ -10,15 +10,10 @@
     color: rgb(178 94 45);
 }
 
-<<<<<<< HEAD
 body{
     background-image: url(../Imagenes/Brand\ pattern\ for\ sustainable\ nutrition\ business_.jpg);
-=======
-.negro{
-    background-image: url(../Imagenes/fondo.jpg);
->>>>>>> e54918ff5b7e5ca5bbb5051797ef1987fadb63d5
-}
 
+}
 .header{
     display: flex;
     flex-direction: row;
