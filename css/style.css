@@ -20,15 +20,21 @@
 .header1{
     background-color: rgb(178, 94, 45);
     width: 420px;
-    height: 50px;
+    height: 113px;
+    
 }
 .header2{
     background-color: rgb(178, 94, 45);;
     width: 420px;
-    height: 50px;
+    height: 113px;
 }
 .header3{
     background-color: rgb(178, 94, 45);
     width: 420px;
-    height: 50px;
+    height: 113px;
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
