@@ -1,14 +1,12 @@
 <!DOCTYPE html>
-<html lang="es">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recetas</title>
+    <title>Register</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
-
-<body class="negro">
+<body>
     <header class="header">
         <section class="header1"><img src="./Imagenes/WhatsApp Image 2024-11-13 at 17.22.06.jpeg" alt="" width="130px"
                 class="logo">
@@ -31,20 +29,34 @@
     </header>
 
 
-    <main>
-        <h1 class="h1-index">HOME</h1>
-        <section class="lista"></section>
-        <button id="cargarMas">Cargar más</button>
+
+    <main class="ubicador">
+        
+        <section class="caja-login">
+            <main class="title-box">
+                <section class="titulo-caja">
+                    ¡Creá tu cuenta!
+                </section>
+            </main>
+
+
+            <div class="email">
+                <label>Email: </label>
+                <input type="email  " name="email" id="email" placeholder="Escriba su Email" >
+            </div>
+
+            <div class="contra-usuario">
+                <label for="contraseña">Contraseña: </label>
+                <input type="password" name="contraseña" id="contraseña" class="login-contraseña" placeholder="Nueva contraseña">
+            </div>
+
+            <div class="sin-cuenta">
+                <a href="./login.html" class="aa">¿ya tenés cuenta?</a>
+                <a href="./login.html" class="aa">(clickeá acá)</a> 
+            </div>
+        </section>
     </main>
-
-
-
-
-
     
     <section class="footer"> Valentin Cagnolatti │ Sofia Monzo │ Clementina De Chazal </section>
-
-    <script src="./js/index.js"></script>
 </body>
-
 </html>
