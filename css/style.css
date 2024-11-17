@@ -29,6 +29,7 @@ body{
     background-color: rgb(244 217 187);
     border-radius: 10px;
     height: 115px;
+    justify-content: space-between;
 }
 .header1{
     width: 420px;
@@ -60,6 +61,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-right: 50px;
     font-size: x-large;
     font-family: "Work Sans", serif;
     font-optical-sizing: auto;
@@ -192,8 +194,8 @@ button {
     background-color: rgb(244 217 187);
     height: 220px;
     width: 150 px;
-    margin-top: 80px;
-    margin-bottom: 80px;
+    margin-top: 240px;
+    margin-bottom: 240px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -237,4 +239,42 @@ button {
 .email{
     margin-left: 5px;
     margin-right: 5px;
+}
+.terminos-condiciones{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+
+
+
+@media (max-width: 390px){
+    .header{
+        flex-direction: column;
+        height: 260px;
+        
+    }
+    .header1 img{
+        margin-left: 0px;
+    }
+    .header1{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 390px; 
+    }
+    .header2{
+        width: 390px;
+    }
+    .header3{
+        width: 390px;
+        justify-content: space-between;
+    }
+
+
+
+
+
+
+
 }
