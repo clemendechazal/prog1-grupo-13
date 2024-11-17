@@ -1,4 +1,4 @@
-let lista = document.querySelector(".lista");
+let lista = document.querySelector(".lista-index");
 
 function cargarRecetas(url) {
     fetch(url)
@@ -27,7 +27,7 @@ function cargarRecetas(url) {
 }
 let skip = 0;
 cargarRecetas('https://dummyjson.com/recipes?limit=10&skip=0');
-document.querySelector('#cargarMas').addEventListener('click', function() {
+document.querySelector('#cargarMas-index').addEventListener('click', function() {
     skip += 10
     let url = 'https://dummyjson.com/recipes?limit=10&skip=' + skip;
     cargarRecetas(url)
