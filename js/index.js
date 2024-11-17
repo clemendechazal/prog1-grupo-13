@@ -16,7 +16,7 @@ function cargarRecetas(url) {
                         <img src="${recetas[i].image}" alt="${recetas[i].name}">
                         <h2>${recetas[i].name}</h2>
                         <p>Nivel de dificultad: ${recetas[i].difficulty}</p>
-                        <a href="./detalle.html?idReceta=${recetas[i].id}">Ver detalle</a>
+                        <a href="./recetas.html?idReceta=${recetas[i].id}">Ver detalle</a>
                     </article>`;
             }
             lista.innerHTML += contenido; 

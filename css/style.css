@@ -105,7 +105,6 @@ body{
 }
 
 
-/** home tener cuidado con los nombres de las variables que le asignes, que no coincidan con las que tiene el header**/
 /** home **/
 .index-header {
     text-align: center;
@@ -187,20 +186,55 @@ button {
     font-style: normal;
 }
 
+/**recetas**/
+.recetas {
+    padding: 20px;
+}
+
+.container-recetas {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: rgb(94 125 109);
+    border-radius: 8px;
+    padding: 20px;
+    color: rgb(233 217 194);
+}
+
+.recipe-card-recetas {
+    text-align: center;
+}
+
+.h1-recetas{
+    text-align: center;
+}
+.img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.name {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.instructions, .cookingTime {
+    font-size: 16px;
+    margin: 5px 0;
+}
 
 /** login **/
 .caja-login{
     border-radius: 15px;
     background-color: rgb(244 217 187);
-    height: 220px;
-    width: 150 px;
-    margin-top: 240px;
-    margin-bottom: 240px;
+    height: 250px;
+    width: 500px;
+    margin-top: 50px;
+    margin-bottom: 50px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     
-
 }
 .ubicador{
     display: flex;
@@ -213,18 +247,33 @@ button {
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
-
 }
 
 .nombre-usuario{
     margin-left: 5px;
     margin-right: 5px;
+    display: flex;
+    justify-content: center;
 }
+
+.nombre-usuario #usuario{
+    width: 300px;
+    margin-left: 10px;
+}
+
 .contra-usuario{
     margin-left: 5px;
     margin-right: 5px;
+    display: flex;
+    justify-content: center;
 
-}.title-box{
+}
+.contra-usuario #contraseña{
+    width: 280px;
+    margin-left: 10px;
+}
+
+.title-box{
     display: flex;
     flex: row;
     justify-content: center;
@@ -239,10 +288,20 @@ button {
 .email{
     margin-left: 5px;
     margin-right: 5px;
+    display: flex;
+    justify-content: center;
 }
+
+.email #email{
+    width: 313px;
+    margin-left: 10px;
+}
+
 .terminos-condiciones{
     margin-left: 5px;
     margin-right: 5px;
+    display: flex;
+    justify-content: center;
 }
 
 
