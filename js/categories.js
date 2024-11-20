@@ -1,4 +1,13 @@
+let categorias = document.querySelector(".categorias");
 
-fetch('https://dummyjson.com/recipes/tags')
-.then(res => res.json())
-.then(console.log);
+fetch("https://dummyjson.com/recipes/tags")
+    .then(function (response) {
+        return response.json()
+    })
+    .then(function (data) {
+        console.log(data);
+    })
+    .catch(function (error) {
+        console.log("Error: " + error);
+    })
+
