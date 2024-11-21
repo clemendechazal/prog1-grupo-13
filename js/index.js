@@ -1,4 +1,4 @@
-let lista = document.querySelector(".lista");
+let lista = document.querySelector(".lista-index");
 
 function cargarRecetas(url) {
     fetch(url)
@@ -12,11 +12,11 @@ function cargarRecetas(url) {
 
             for (let i = 0; i < recetas.length; i++) {
                 contenido += `
-                    <article>
+                    <article class = "article_index">
                         <img src="${recetas[i].image}" alt="${recetas[i].name}">
-                        <h2>${recetas[i].name}</h2>
+                        <h3>${recetas[i].name}</h3>
                         <p>Nivel de dificultad: ${recetas[i].difficulty}</p>
-                        <a href="./detalle.html?idReceta=${recetas[i].id}">Ver detalle</a>
+                        <a class = "a_index" href="./recetas.html?idReceta=${recetas[i].id}">Ver detalle</a>
                     </article>`;
             }
             lista.innerHTML += contenido; 
@@ -27,7 +27,7 @@ function cargarRecetas(url) {
 }
 let skip = 0;
 cargarRecetas('https://dummyjson.com/recipes?limit=10&skip=0');
-document.querySelector('#cargarMas').addEventListener('click', function() {
+document.querySelector('#cargarMas-index').addEventListener('click', function() {
     skip += 10
     let url = 'https://dummyjson.com/recipes?limit=10&skip=' + skip;
     cargarRecetas(url)

@@ -1,19 +1,45 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recetas</title>
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
-    <header>
-        <h1>VIAJE AL SABOR</h1>
+    <header class="header">
+        <section class="header1"><img src="./Imagenes/WhatsApp Image 2024-11-13 at 17.22.06.jpeg" alt="" width=""
+                class="logo">
+        </section>
+        <section class="header2">
+            <div>
+                <label for="buscador">Buscador</label>
+                <input type="text" name="buscador" id="buscador" class="search">
+            </div>
+        </section>
+        <section class="header3">
+            <ul class="menu">
+                <li><a class="aa" href="./index.html">Home</a></li>
+                <li><a class="aa" href="./categories.html">Categorias</a></li>
+                <li><a class="aa" href="./login.html">Login</a></li>
+                <li><a class="aa" href="./register.html">Registro</a></li>
+
+            </ul>
+        </section>
     </header>
+
     <main>
-        <section class="lista"></section>
-        <button id="cargarMas">Cargar más</button>
+        <h1 class="h1-index">HOME</h1>
+        <section class="lista-index"></section>
+        <section class="boton-index"><button id="cargarMas-index">Cargar más</button></section>
     </main>
+
+    <footer>
+        <section class="footer"> <p>Valentin Cagnolatti │ Sofia Monzo │ Clementina De Chazal</p> </section>
+    </footer>
     <script src="./js/index.js"></script>
 </body>
+
 </html>
