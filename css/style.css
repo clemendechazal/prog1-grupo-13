@@ -315,8 +315,9 @@ button {
     justify-content: center;
 }
 
-/**/
-categorias**/ .categorias12 {
+/**categorias**/ 
+
+.categorias12 {
     background: rgb(94 125 109);
     border-radius: 8px;
     display: flex;
@@ -336,8 +337,12 @@ categorias**/ .categorias12 {
 }
 
 .categorias {
-    width: 10%;
-    color: rgb(94 125 109);
+    color: rgb(233 217 194);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20%;
 }
 
 .lista_categorias{
@@ -348,13 +353,16 @@ categorias**/ .categorias12 {
     display: flex;
     justify-content: center
 }
-
+.lista_ca{
+    text-decoration: none;
+}
 .article_categorias{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
-}
+    justify-content: space-around;
+    width: 69%;
+    margin: 0px 0px 0px 230px;
 
 
 /**responsive**/
