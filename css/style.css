@@ -106,7 +106,6 @@ body {
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    width: 100%;
 }
 
 
@@ -416,10 +415,6 @@ categorias**/ .categorias12 {
         font-weight: 400;
         font-style: normal;
         font-size: medium;
-        font-family: "Work Sans", serif;
-        font-optical-sizing: auto;
-        font-weight: 400;
-        font-style: normal;
         text-align: center;
     }
 
@@ -444,6 +439,16 @@ categorias**/ .categorias12 {
         width: 100%;
     }
 
+    .article_index {
+        background: rgb(94 125 109);
+        border-radius: 8px;
+        padding: 6px;
+        color: rgb(233 217 194);
+        list-style: none;
+        list-style-type: none;
+        text-decoration: none;
+        width: 98%;
+    }
 
 
 
