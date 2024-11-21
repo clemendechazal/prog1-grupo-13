@@ -6,7 +6,7 @@ let img = document.querySelector(".img");
 let name = document.querySelector(".name");
 let instructions = document.querySelector(".instructions");
 let cookTimeMinutes = document.querySelector(".cookingTime");
-let mealType = document.querySelector(".mealType")
+let tags = document.querySelector(".tags")
 
 let url = `https://dummyjson.com/recipes/${idReceta}`;
 
@@ -20,7 +20,7 @@ fetch(url)
         name.innerText = `${results.name}`; 
         instructions.innerText = `Instrucciones: ${results.instructions}`; 
         cookTimeMinutes.innerText = `Tiempo de cocción: ${results.cookTimeMinutes} minutos`;
-        mealType.innerText = `Categoria: ${results.mealType}` 
+        tags.innerText = `Categoria: ${results.tags}` 
     })
     .catch(function(err) {
         console.log(err); 
