@@ -1,2 +1,5 @@
 # Programacion-trabajo-final
-hola chcios como estan
+Falta trabajar:
+clemen: modificar unas cuantas cosas de la 4 paguina y hacer la 6.
+valen:
+sofi:
