@@ -353,6 +353,7 @@ button {
     display: flex;
     justify-content: center
 }
+
 .lista_ca{
     text-decoration: none;
 }
@@ -367,7 +368,7 @@ button {
 
 /**responsive**/
 
-@media (max-width: 430px) {
+@media (max-width: 430px){
     /**iphone 12 pro**/
 
     /**header**/
@@ -457,7 +458,4 @@ button {
         text-decoration: none;
         width: 98%;
     }
-
-
-
 }
