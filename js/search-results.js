@@ -9,12 +9,12 @@ fetch(`https://dummyjson.com/recipes/${final}`)
     let resultados = ""
     let idGet = location.search;
     let params = URLSearchParams(idGet);
-    let final = params.get("clemen");
+    let final = params.get('query');
     results.innerText = `Resultado de la busqueda: ${final}`
    
     for (let i = 0; i < recetas.length; i++) {
         let recetas = recetas[i];
-        if (recetas.name == final){
+        if (recetas.name in final){
             contenido += `
             <article class = "article_index">
                 <img src="${recetas[i].image}" alt="${recetas[i].name}">

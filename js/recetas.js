@@ -20,7 +20,15 @@ fetch(url)
         name.innerText = `${results.name}`; 
         instructions.innerText = `Instrucciones: ${results.instructions}`; 
         cookTimeMinutes.innerText = `Tiempo de cocción: ${results.cookTimeMinutes} minutos`;
-        tags.innerText = `Categoria: ${results.tags}` 
+        
+        listaReceta = " ";
+        for (let i = 0; i < results.tags.length; i++) {
+            const celular = results.tags[i];
+            listaReceta += `
+            
+            <li><a href="./category.html?idTag=${celular}">${celular}</a></li>`
+        };
+        tags.innerHTML = `Categorias: ${listaReceta}`;
     })
     .catch(function(err) {
         console.log(err); 
