@@ -380,6 +380,39 @@ button {
     justify-content: space-around;
     width: 69%;
     margin: 0px 0px 0px 230px;
+}
+
+/**pagina de busqueda**/
+#searchTerm{
+    font-family: "Work Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    background: rgb(94 125 109);
+    border-radius: 8px;
+    color: rgb(233 217 194);
+    display: flex;
+    justify-content: center;
+}
+
+
+#resultList{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+}
+.article_busqueda{
+    background: rgb(94 125 109);
+    border-radius: 8px;
+    padding: 6px;
+    color: rgb(233 217 194);
+    list-style: none;
+    list-style-type: none;
+    text-decoration: none;
+    width: 33%;
+}
 
 
 /**responsive**/
@@ -485,4 +518,4 @@ button {
         margin: none;
     }
 
-}}
+}
