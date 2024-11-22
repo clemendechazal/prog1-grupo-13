@@ -1,5 +1,5 @@
 
-let presslogin = false
+let checkBox = document.getElementById("terminos")
 
 let personaEmail = document.getElementById("email_input")
 let personaPassword = document.getElementById("password_input")
@@ -23,7 +23,7 @@ if (personaPassword.value === ""){
 else {
     mensajeErrorPassword.innerText = ""
 }
-if(personaEmail.value !== "" && personaPassword.value !== "") {
+if(personaEmail.value !== "" && personaPassword.value !== "" && checkBox.checked === true) {
     registerForm.submit()
 }
 })

@@ -1,6 +1,5 @@
 
 
-let presslogin = false
 
 let personaEmail = document.getElementById("email_input")
 let personaPassword = document.getElementById("password_input")
@@ -11,6 +10,7 @@ let mensajeErrorPassword= document.getElementById("vacioErrorPass");
 let registerForm = document.querySelector("form")
 
 let button = document.getElementById('button_login');
+
 button.addEventListener('click', function(){
 if (personaEmail.value === ""){
     mensajeErrorEmail.innerText = "Ingrese email!"
@@ -29,3 +29,7 @@ if(personaEmail.value !== "" && personaPassword.value !== "") {
     registerForm.submit()
 }
 })
+
+
+
+
