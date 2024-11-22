@@ -1,4 +1,5 @@
 let lista = document.querySelector(".lista-index");
+let formulario = document.querySelector("form");
 
 function cargarRecetas(url) {
     fetch(url)

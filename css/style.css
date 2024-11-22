@@ -236,12 +236,11 @@ button {
     flex-direction: column;
     justify-content: center;
 }
-
 .container-textbox{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    height: 50px;
+    height: 80px;
 }
 
 .textbox{
@@ -254,7 +253,7 @@ button {
 .caja-login {
     border-radius: 15px;
     background-color: rgb(244, 214, 187);
-    height: 250px;
+    height: 350px;
     width: 500px;
     margin-top: 50px;
     margin-bottom: 50px;
