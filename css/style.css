@@ -231,9 +231,30 @@ button {
 }
 
 /** login **/
+
+
+.inicioDeSesion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.container-textbox{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 50px;
+}
+.textbox{
+    width: 258px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
 .caja-login {
     border-radius: 15px;
-    background-color: rgb(244 217 187);
+    background-color: rgb(244, 214, 187);
     height: 250px;
     width: 500px;
     margin-top: 50px;
@@ -258,30 +279,6 @@ button {
     margin-bottom: 20px;
 }
 
-.nombre-usuario {
-    margin-left: 5px;
-    margin-right: 5px;
-    display: flex;
-    justify-content: center;
-}
-
-.nombre-usuario #usuario {
-    width: 300px;
-    margin-left: 10px;
-}
-
-.contra-usuario {
-    margin-left: 5px;
-    margin-right: 5px;
-    display: flex;
-    justify-content: center;
-
-}
-
-.contra-usuario #contraseña {
-    width: 280px;
-    margin-left: 10px;
-}
 
 .title-box {
     display: flex;
@@ -293,6 +290,25 @@ button {
 .titulo-caja {
     font-size: larger;
     align-items: center;
+}
+
+
+
+.usuario{
+    width: 250px;
+}
+.passwrd{
+    width: 250px;
+}
+
+
+
+
+
+
+.siguiente a{
+    text-decoration: none;
+    color: black;
 }
 
 /** register **/

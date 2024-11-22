@@ -40,26 +40,26 @@
                 </section>
             </section>
 
-            <div class="nombre-usuario">
-                <label for="usuario">Usuario: </label>
-                <input type="" name="usuario" id="usuario" class="login-usuario"
-                    placeholder="Escriba su nombre de usuario">
-            </div>
 
-            <div class="contra-usuario">
-                <label for="contraseña">Contraseña: </label>
-                <input type="password" name="contraseña" id="contraseña" class="login-contraseña"
-                    placeholder="Escriba su contraseña">
-            </div>
 
-            <div class="siguiente">
-                <a href="./index.html"></a>
-            </div>
+            <form class="inicioDeSesion" method="get">
+                <section class="container-textbox">
+                    <div class="textbox">
+                        <input class="usuario" type="text" name="nombreUsuario" value="" placeholder="Ingrese su nombre de usuario">
+                        <input class="passwrd" type="password" name="contraseña" value="" placeholder="Ingrese su contraseña">
+                    </div>
+                </section>
+
+                <button type="submit">Enviar</button>
+            </form>
+
 
             <div class="sin-cuenta">
                 <a href="./register.html" class="aa">¿Aún no tenés cuenta?</a>
                 <a href="./register.html" class="aa">(Haz click acá)</a>
             </div>
+
+
 
         </section>
     </main>
@@ -67,8 +67,12 @@
 
 
     <footer>
-        <section class="footer"><p>Valentin Cagnolatti │ Sofia Monzo │ Clementina de Chazal</p></section>
+        <section class="footer">
+            <p>Valentin Cagnolatti │ Sofia Monzo │ Clementina de Chazal</p>
+        </section>
     </footer>
+
+    <script src="./js/login.js"></script>
 </body>
 
 </html>
