@@ -10,7 +10,7 @@ form.addEventListener('click', function (e) {
         alert("Buscador vacío")
 
     }
-    else if (length(escrito) <= 3) {
+    else if (escrito.length(escrito) <= 3) {
         alert("Se necesitan mas de 3 caracteres")
     }
     else if (escrito !== "" && length(escrito) > 3) {
