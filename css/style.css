@@ -59,7 +59,11 @@ body {
     font-weight: 400;
     font-style: normal;
 }
-
+.buscadorHeader{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
 .header3 {
     width: 30%;
     height: 113px;
@@ -77,6 +81,7 @@ body {
 
 .search {
     width: 250px;
+    height: 25px;
 }
 
 .aa {
