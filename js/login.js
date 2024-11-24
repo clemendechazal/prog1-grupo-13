@@ -21,18 +21,6 @@ form.addEventListener('click', function (e) {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 let personaEmail = document.getElementById("email_input")
 let personaPassword = document.getElementById("password_input")
 
@@ -41,7 +29,7 @@ let mensajeErrorPassword = document.getElementById("vacioErrorPass");
 
 let registerForm = document.querySelector("form")
 
-let button = document.getElementById('button_login');
+let button = document.getElementById('buttonLogin');
 
 button.addEventListener('click', function () {
     if (personaEmail.value === "") {
