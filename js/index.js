@@ -7,7 +7,6 @@ function cargarRecetas(url) {
             return response.json();
         })
         .then(function(data) {
-            console.log(data.recipes); 
             let contenido = "";
             let recetas = data.recipes; 
 
@@ -26,6 +25,7 @@ function cargarRecetas(url) {
             console.error('Fetch error:', err);
         });
 }
+
 let skip = 0;
 cargarRecetas('https://dummyjson.com/recipes?limit=10&skip=0');
 document.querySelector('#cargarMas-index').addEventListener('click', function() {
