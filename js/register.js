@@ -4,7 +4,7 @@ let personaEmail = document.getElementById("emailInput")
 let personaPassword = document.getElementById("passwordInput")
 let mensajeErrorEmail = document.getElementById("vacioErrorEmail");
 let mensajeErrorPassword = document.getElementById("vacioErrorPass");
-let registerForm = document.querySelector("form")
+let registerForm = document.getElementById("registerForm")
 let button = document.getElementById('buttonLogin');
 
 button.addEventListener('click', function () {

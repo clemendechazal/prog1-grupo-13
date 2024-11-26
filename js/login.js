@@ -27,7 +27,7 @@ let personaPassword = document.getElementById("passwordInput")
 let mensajeErrorEmail = document.getElementById("vacioErrorEmail");
 let mensajeErrorPassword = document.getElementById("vacioErrorPass");
 
-let registerForm = document.querySelector("form")
+let registerForm = document.getElementById("loginForm")
 
 let button = document.getElementById('buttonLogin');
 
