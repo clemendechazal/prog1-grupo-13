@@ -1,73 +1,44 @@
+let queryString = location.search;
+let params = new URLSearchParams(queryString);
+let fin = params.get("query");
 
+fetch (`https://dummyjson.com/recipes/search?q=${fin}`)
+    .then (function(response) {
+            return response.json();
+    })
+    .then(function(data) {
+        let busqueda = document.querySelector(".explorar");
+        let resultadodmens = document.querySelector(".mensaje");
+        let resultados = "";
+        resultadodmens.innerText = `Resultados de búsqueda de: ${fin}`
+            for (let i = 0; i < data.recipes.length; i++) {
+                let receta = data.recipes [i];
+                    resultados += `
+                    <article class = "article_index" "flex">
+                        <img src="${receta.image}" alt="${receta.name}">
+                        <h3>${receta.name}</h3>
+                        <a class = "a_index" href="./receta.html?idReceta=${receta.id}">Ver Detalle</a>
+                        </article>
+                        `;
+            }
+            if (resultados === "") {
+            resultados = `<h1 class="nohaytalresultado">No se encontraron resultados para la búsqueda.</h1>`;
+            }
+        busqueda.innerHTML = resultados;
+    })
+    .catch(function(error){
+        console.error("Error:", error);
+    });
 
-let idGet = location.search;
-let params = new URLSearchParams(idGet);
-let final = params.get("buscador");
-let searchRecipe = document.querySelector(".lista-index")
-let contenido = ""
+let compu = document.querySelector("#buscador_f");
+let anillo = document.querySelector("#buscador");
 
-fetch(`https://dummyjson.com/recipes/?q=${final}`)
-.then(function(response) {
-  return response.json();
-})
-
-.then(function(data) {
-    for (let i = 0; i < recetas.length; i++){
-        let recetas = data.recipes; 
-
-        let contenidos = `
-            <article class = "article_index">
-                <img src="${recetas[i].image}" alt="${recetas[i].name}">
-                <h3>${recetas[i].name}</h3>
-                <p>Nivel de dificultad: ${recetas[i].difficulty}</p>
-                <a class = "a_index" href="./recetas.html?idReceta=${recetas[i].id}">Ver detalle</a>
-            </article>
-            `;
-        
-        contenido += contenidos;
+compu.addEventListener("submit", function(event) {
+    if (anillo.value === "") {
+        alert("Por favor escriba que desea buscar.");
+        event.preventDefault();
     }
-
-    searchRecipe.innerHTML = contenido;
-})
-
-.catch(function(error) {
-  console.log("Error: " + error);
-});
-
-
-/** */
-fetch(`https://dummyjson.com/recipes/${final}`)
-.then(function(response) {
-  return response.json()
-})
-
-.then(function(data) {
-    let search = document.querySelector(".searchResults");
-    let results = document.querySelector(".results")
-    let resultados = ""
-    let idGet = location.search;
-    let params = URLSearchParams(idGet);
-    let final = params.get("clemen");
-    results.innerText = `Resultado de la busqueda: ${final}`
-   
-    for (let i = 0; i < recetas.length; i++) {
-        let recetas = recetas[i];
-        if (recetas.name in final){
-            contenido += `
-            <article class = "article_index">
-                <img src="${recetas[i].image}" alt="${recetas[i].name}">
-                <h3>${recetas[i].name}</h3>
-                <p>Nivel de dificultad: ${recetas[i].difficulty}</p>
-                <a class = "a_index" href="./recetas.html?idReceta=${recetas[i].id}">Ver detalle</a>
-            </article>`;
-        }
-    }
-
-    if (contenido == ""){
-        contenido = `<h3>No se encontraron resultados a su busqueda</h3>`;
-    }
-    search.innerHTML = contenido;
-})
-.catch(function(error) {
-  console.log("Error: " + error);
-});
+    else if (anillo.value.length < 3) {
+        alert("Su busqueda tiene que tener al menos 3 caracteres para funcionar.");
+        event.preventDefault();
+    }});

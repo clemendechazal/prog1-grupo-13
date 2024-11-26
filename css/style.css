@@ -350,6 +350,9 @@ button {
     color: black;
 }
 
+.frase_busqueda{
+    color: rgb(94 125 109);;
+}
 /**categorias**/ 
 
 .categorias12 {
@@ -410,8 +413,18 @@ button {
     margin: 0px 0px 0px 230px;
 }
 
+/**resultadobusqueda**/
+.nohaytalresultado{
+    background-color:rgb(94 125 109);
+    color: rgb(233 217 194);
+}
 
-
+.explorar{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
 
 /**responsive**/
 

@@ -15,8 +15,8 @@
         </section>
 
         <section class="header2">
-            <form action="./index.html" method="get" class="buscadorHeader">
-                <input type="text" name="buscador" placeholder="Buscar recetas" id="buscador" class="search">
+            <form id="buscador_f" action="./search-results.html" method="get" class="buscadorHeader">
+                <input type="text" name="query" placeholder="Buscar recetas" id="buscador" class="search">
                 <button type="submit">Buscar</button>
             </form>
         </section>
@@ -33,12 +33,14 @@
     </header>
 
     <main>
-        <section class="searchResults"></section>
-        <h3 class="results"></h3>
+        <p class="mensaje"></p>
+        <div class="explorar"></div>
     </main>
+
     <footer>
         <section class="footer"><p>Valentin Cagnolatti │ Sofia Monzo │ Clementina de Chazal</p></section>
     </footer>
+    <script src="./js/search-results.js"></script>
 </body>
 </html>
 

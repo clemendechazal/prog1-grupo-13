@@ -34,3 +34,18 @@ fetch(url)
         console.log(err); 
     });
 
+
+
+
+let compu = document.querySelector("#buscador_f");
+let anillo = document.querySelector("#buscador");
+
+compu.addEventListener("submit", function(event) {
+    if (anillo.value === "") {
+        alert("Por favor escriba que desea buscar.");
+        event.preventDefault();
+    }
+    else if (anillo.value.length < 3) {
+        alert("Su busqueda tiene que tener al menos 3 caracteres para funcionar.");
+        event.preventDefault();
+    }});
