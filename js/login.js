@@ -10,7 +10,7 @@ form.addEventListener('click', function (e) {
         alert("Buscador vacío")
 
     }
-    else if (length(escrito) <= 3) {
+    else if (escrito.length(escrito) <= 3) {
         alert("Se necesitan mas de 3 caracteres")
     }
     else if (escrito !== "" && length(escrito) > 3) {
@@ -18,18 +18,6 @@ form.addEventListener('click', function (e) {
     }
 
 })
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -41,7 +29,7 @@ let mensajeErrorPassword = document.getElementById("vacioErrorPass");
 
 let registerForm = document.querySelector("form")
 
-let button = document.getElementById('button_login');
+let button = document.getElementById('buttonLogin');
 
 button.addEventListener('click', function () {
     if (personaEmail.value === "") {

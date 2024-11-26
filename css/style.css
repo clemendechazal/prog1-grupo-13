@@ -59,7 +59,11 @@ body {
     font-weight: 400;
     font-style: normal;
 }
-
+.buscadorHeader{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
 .header3 {
     width: 30%;
     height: 113px;
@@ -77,6 +81,7 @@ body {
 
 .search {
     width: 250px;
+    height: 25px;
 }
 
 .aa {
@@ -339,6 +344,10 @@ button {
     justify-content: center;
 }
 
+.aaa {
+    text-decoration: underline;
+    color: black;
+}
 
 /**categorias**/ 
 
@@ -368,7 +377,7 @@ button {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    gap: 20%;
+    gap: 10px;
 }
 
 .lista_categorias{
@@ -381,7 +390,14 @@ button {
 }
 
 .lista_ca{
-    text-decoration: none;
+    text-decoration: underline;
+    color: rgb(233 217 194);;
+    background-color: rgb(94 125 109);
+    margin: 10px;
+    border-radius: 8px;
+    width: 30%;
+    justify-content: center;
+    display: flex;
 }
 
 .article_categorias{
