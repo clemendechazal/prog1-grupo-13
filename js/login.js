@@ -21,8 +21,8 @@ form.addEventListener('click', function (e) {
 
 
 
-let personaEmail = document.getElementById("email_input")
-let personaPassword = document.getElementById("password_input")
+let personaEmail = document.getElementById("emailInput")
+let personaPassword = document.getElementById("passwordInput")
 
 let mensajeErrorEmail = document.getElementById("vacioErrorEmail");
 let mensajeErrorPassword = document.getElementById("vacioErrorPass");
@@ -55,7 +55,7 @@ button.addEventListener('click', function () {
 let compu = document.querySelector("#buscador_f");
 let anillo = document.querySelector("#buscador");
 
-compu.addEventListener("submit", function(event) {
+compu.addEventListener("submit", function (event) {
     if (anillo.value === "") {
         alert("Por favor escriba que desea buscar.");
         event.preventDefault();
@@ -63,4 +63,17 @@ compu.addEventListener("submit", function(event) {
     else if (anillo.value.length < 3) {
         alert("Su busqueda tiene que tener al menos 3 caracteres para funcionar.");
         event.preventDefault();
-    }});
+    }
+});
+
+
+
+let yaTengoCuenta = document.getElementById("yaCuenta")
+
+yaTengoCuenta.addEventListener('mouseover', function(){
+    this.style.textDecoration = "underline";
+})
+
+yaTengoCuenta.addEventListener('mouseout', function(){
+    this.style.textDecoration = "none"
+})
