@@ -135,6 +135,8 @@ body {
     color: rgb(233 217 194);
     display: flex;
     justify-content: center;
+    padding: 12px;
+    margin-top: 10px;
 }
 
 .lista-index {
