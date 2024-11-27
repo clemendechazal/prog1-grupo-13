@@ -1,3 +1,48 @@
+let homeMenu = document.getElementById("idhome")
+let categoriesMenu = document.getElementById("idcategories")
+let loginMenu = document.getElementById("idlogin")
+let registerMenu = document.getElementById("idregister")
+
+homeMenu.addEventListener('mouseover', function(){
+    this.style.backgroundColor = 'rgb(94, 125, 109)'
+    this.style.color = 'rgb(244, 214, 187)'
+})
+homeMenu.addEventListener('mouseout', function(){
+    this.style.backgroundColor = 'rgb(244, 214, 187)'
+    this.style.color = 'black'
+})
+
+categoriesMenu.addEventListener('mouseover', function(){
+    this.style.backgroundColor = 'rgb(94, 125, 109)'
+    this.style.color = 'rgb(244, 214, 187)'
+})
+categoriesMenu.addEventListener('mouseout', function(){
+    this.style.backgroundColor = 'rgb(244, 214, 187)'
+    this.style.color = 'black'
+})
+
+loginMenu.addEventListener('mouseover', function(){
+    this.style.backgroundColor = 'rgb(94, 125, 109)'
+    this.style.color = 'rgb(244, 214, 187)'
+})
+loginMenu.addEventListener('mouseout', function(){
+    this.style.backgroundColor = 'rgb(244, 214, 187)'
+    this.style.color = 'black'
+})
+
+registerMenu.addEventListener('mouseover', function(){
+    this.style.backgroundColor = 'rgb(94, 125, 109)'
+    this.style.color = 'rgb(244, 214, 187)'
+})
+registerMenu.addEventListener('mouseout', function(){
+    this.style.backgroundColor = 'rgb(244, 214, 187)'
+    this.style.color = 'black'
+})
+
+
+
+
+
 let categorias = document.querySelector(".categorias");
 
 fetch('https://dummyjson.com/recipes/tags')
