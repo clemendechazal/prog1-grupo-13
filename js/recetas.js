@@ -15,26 +15,23 @@ fetch(url)
         return response.json();
     })
     .then(function(results) {
-        console.log(results);
         img.src = results.image; 
         name.innerText = `${results.name}`; 
         instructions.innerText = `Instrucciones: ${results.instructions}`; 
         cookTimeMinutes.innerText = `Tiempo de cocción: ${results.cookTimeMinutes} minutos`;
         
-        listaReceta = " ";
+        listaReceta = "";
         for (let i = 0; i < results.tags.length; i++) {
-            const celular = results.tags[i];
+            const meal = results.tags[i];
             listaReceta += `
             
-            <li><a href="./category.html?idTag=${celular}">${celular}</a></li>`
+            <li><a href="./category.html?idTag=${meal}">${meal}</a></li>`
         };
         tags.innerHTML = `Categorias: ${listaReceta}`;
     })
     .catch(function(err) {
         console.log(err); 
     });
-
-
 
 
 let compu = document.querySelector("#buscador_f");

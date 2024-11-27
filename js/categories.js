@@ -20,7 +20,6 @@ fetch('https://dummyjson.com/recipes/tags')
         console.log("Error: " + error);
     })
 
-
 let compu = document.querySelector("#buscador_f");
 let anillo = document.querySelector("#buscador");
 

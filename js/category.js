@@ -15,10 +15,6 @@ fetch(url)
         let contenido = "";
         let recetas = data.recipes; 
         
-        if (data.tag) { 
-            h1Titulo.innerHTML = `Categoría de ${data.tag}`;
-        }
-
         for (let i = 0; i < recetas.length; i++) {
             contenido += `
                 <article class = "article_index">
@@ -32,7 +28,7 @@ fetch(url)
         lista.innerHTML += contenido; 
 
         if (recetas.length > 0) {
-            h1Titulo.textContent = `Categoría de: ${idTag}`;
+            h1Titulo.innerHTML = `Categoría de: ${idTag}`;
         }
     })
     .catch(function(err) {

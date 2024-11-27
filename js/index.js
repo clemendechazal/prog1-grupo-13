@@ -25,9 +25,9 @@ function cargarRecetas(url) {
             console.error('Fetch error:', err);
         });
 }
+cargarRecetas('https://dummyjson.com/recipes?limit=10&skip=0');
 
 let skip = 0;
-cargarRecetas('https://dummyjson.com/recipes?limit=10&skip=0');
 document.querySelector('#cargarMas-index').addEventListener('click', function() {
     skip += 10
     let url = 'https://dummyjson.com/recipes?limit=10&skip=' + skip;

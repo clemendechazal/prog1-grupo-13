@@ -29,6 +29,16 @@ button.addEventListener('click', function () {
     }
 })
 
+let yaTengoCuenta = document.getElementById("yaCuenta")
+
+yaTengoCuenta.addEventListener('mouseover', function () {
+    this.style.textDecoration = "underline";
+})
+
+yaTengoCuenta.addEventListener('mouseout', function(){
+    this.style.textDecoration = "none"
+})
+
 
 let compu = document.querySelector("#buscador_f");
 let anillo = document.querySelector("#buscador");
@@ -45,12 +55,3 @@ compu.addEventListener("submit", function (event) {
 });
 
 
-let yaTengoCuenta = document.getElementById("yaCuenta")
-
-yaTengoCuenta.addEventListener('mouseover', function () {
-    this.style.textDecoration = "underline";
-})
-
-yaTengoCuenta.addEventListener('mouseout', function(){
-    this.style.textDecoration = "none"
-})
