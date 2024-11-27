@@ -417,6 +417,10 @@ button {
 }
 
 /**resultadobusqueda**/
+.resultado-main{
+    width: 100%;
+}
+
 .nohaytalresultado{
     background-color:rgb(94 125 109);
     color: rgb(233 217 194);
@@ -432,8 +436,7 @@ button {
 }
 
 .mensaje{
-    background-color:rgb(94 125 109);
-    color: rgb(233 217 194);
+    color: rgb(94 125 109);
     display: flex;
     justify-content: center;
     width: 100%;
