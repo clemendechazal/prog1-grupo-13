@@ -299,6 +299,7 @@ button {
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
+    text-decoration: underline;
 }
 
 .title-box {
@@ -419,6 +420,8 @@ button {
 .nohaytalresultado{
     background-color:rgb(94 125 109);
     color: rgb(233 217 194);
+    border-radius: 8px;
+    padding: 10px;
 }
 
 .explorar{
@@ -426,6 +429,17 @@ button {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-evenly;
+}
+
+.mensaje{
+    background-color:rgb(94 125 109);
+    color: rgb(233 217 194);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 35px;
+    border-radius: 8px;
+    font-size: x-large;
 }
 
 /**responsive**/
