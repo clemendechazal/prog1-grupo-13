@@ -53,11 +53,10 @@ registerMenu.addEventListener('mouseout', function(){
 })
 
 
-
 /**codigo de resultado de busqueda**/
 let queryString = location.search;
 let params = new URLSearchParams(queryString);
-let fin = params.get("query");
+let fin = params.get("idsearch");
 
 fetch (`https://dummyjson.com/recipes/search?q=${fin}`)
     .then (function(response) {

@@ -55,7 +55,6 @@ registerMenu.addEventListener('mouseout', function(){
 })
 
 
-
 /**codigo category**/
 
 let qs = location.search;
