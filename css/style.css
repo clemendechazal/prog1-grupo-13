@@ -469,6 +469,16 @@ button {
 @media (max-width: 420px){
     /**iphone 12 pro**/
 
+    /**body**/
+    body {
+        background-image: url(../Imagenes/fondo.jpg);
+        font-family: "Work Sans", serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        margin-top: 3px;
+    }
+
     /**header**/
     .header {
         display: flex;
@@ -477,6 +487,8 @@ button {
         border-radius: 10px;
         height: 100%;
         justify-content: center;
+        position: unset;
+        padding: 0px;
     }
 
     .header1 img {
@@ -498,7 +510,7 @@ button {
         display: flex;
         justify-content: center;
         font-size: x-large;
-        padding: 0px 6px;
+        padding: 0px 28px;
     }
 
     .header3 {
@@ -587,6 +599,7 @@ button {
         list-style-type: none;
         text-decoration: none;
         width: 98%;
+        margin-bottom: 10px;
     }
 
 
@@ -616,4 +629,20 @@ button {
         display: flex;
         text-align: center;
     }
+
+    .h1-index {
+        font-family: "Work Sans", serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        background: rgb(94 125 109);
+        border-radius: 8px;
+        color: rgb(244 217 187);
+        display: flex;
+        justify-content: center;
+        padding: 12px;
+        margin-top: 10px;
+        text-align: center;
+        }
+    
 }
