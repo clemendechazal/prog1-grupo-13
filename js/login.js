@@ -120,11 +120,9 @@ button.addEventListener('click', function () {
 })
 
 let yaTengoCuenta = document.getElementById("yaCuenta")
-
 yaTengoCuenta.addEventListener('mouseover', function(){
     this.style.textDecoration = "underline";
 })
-
 yaTengoCuenta.addEventListener('mouseout', function(){
     this.style.textDecoration = "none"
 })
@@ -145,5 +143,3 @@ buscar2.addEventListener("submit", function (event) {
         event.preventDefault();
     }
 });
-
-
