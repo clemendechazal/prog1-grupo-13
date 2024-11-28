@@ -67,26 +67,8 @@ registerMenu.addEventListener('mouseout', function(){
 
 /**formularios**/
 
-let buscador = document.getElementById("buscador")
+let buscador = document.getElementById(".buscadorHeader")
 let form = document.querySelector("form")
-
-
-form.addEventListener('click', function (e) {
-    e.preventDefault();
-    let escrito = buscador.value
-
-    if (escrito === "") {
-        alert("Buscador vacío")
-
-    }
-    else if (escrito.length(escrito) <= 3) {
-        alert("Se necesitan mas de 3 caracteres")
-    }
-    else if (escrito !== "" && length(escrito) > 3) {
-        form.submit();
-    }
-
-})
 
 let personaEmail = document.getElementById("emailInput")
 let personaPassword = document.getElementById("passwordInput")
@@ -135,7 +117,7 @@ yaTengoCuenta.addEventListener('mouseout', function(){
 let buscar2 = document.querySelector("#buscador_f");
 let buscar3 = document.querySelector("#buscador");
 
-buscar2.addEventListener("submit", function (event) {
+buscar2.addEventListener("submit", function(event) {
     if (buscar3.value === "") {
         alert("Por favor escriba que desea buscar.");
         event.preventDefault();
@@ -143,7 +125,5 @@ buscar2.addEventListener("submit", function (event) {
     else if (buscar3.value.length < 3) {
         alert("Su busqueda tiene que tener al menos 3 caracteres para funcionar.");
         event.preventDefault();
-    }
-});
-
+    }});
 
