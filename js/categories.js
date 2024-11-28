@@ -52,8 +52,6 @@ registerMenu.addEventListener('mouseout', function(){
 
 
 
-
-
 let categorias = document.querySelector(".categorias");
 
 fetch('https://dummyjson.com/recipes/tags')
@@ -76,15 +74,15 @@ fetch('https://dummyjson.com/recipes/tags')
         console.log("Error: " + error);
     })
 
-let compu = document.querySelector("#buscador_f");
-let anillo = document.querySelector("#buscador");
+let buscar2 = document.querySelector("#buscador_f");
+let buscar3 = document.querySelector("#buscador");
 
-compu.addEventListener("submit", function(event) {
-    if (anillo.value === "") {
+buscar2.addEventListener("submit", function(event) {
+    if (buscar3.value === "") {
         alert("Por favor escriba que desea buscar.");
         event.preventDefault();
     }
-    else if (anillo.value.length < 3) {
+    else if (buscar3.value.length < 3) {
         alert("Su busqueda tiene que tener al menos 3 caracteres para funcionar.");
         event.preventDefault();
     }});

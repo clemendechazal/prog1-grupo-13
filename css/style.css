@@ -17,14 +17,6 @@ body {
 
 
 /** header **/
-.color {
-    color:  rgb(244 217 187);
-}
-
-.color2 {
-    color: rgb(94 125 109);
-}
-
 .header {
     display: flex;
     flex-direction: row;
@@ -370,7 +362,7 @@ button {
 }
 
 .aaa {
-    text-decoration: none;
+    text-decoration: underline;
     color: black;
 }
 
@@ -387,7 +379,7 @@ button {
     margin-top: 10px;
 }
 
-.h1clemen {
+.h1-categories {
     font-family: "Work Sans", serif;
     background: rgb(94 125 109);
     font-optical-sizing: auto;

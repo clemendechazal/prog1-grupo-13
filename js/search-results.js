@@ -63,9 +63,9 @@ fetch (`https://dummyjson.com/recipes/search?q=${fin}`)
     })
     .then(function(data) {
         let busqueda = document.querySelector(".explorar");
-        let resultadodmens = document.querySelector(".mensaje");
+        let resultado2 = document.querySelector(".mensaje");
         let resultados = "";
-        resultadodmens.innerText = `Resultados de búsqueda de: ${fin}`
+        resultado2.innerText = `Resultados de búsqueda de: ${fin}`
             for (let i = 0; i < data.recipes.length; i++) {
                 let recetas = data.recipes;
                     resultados += `
@@ -86,15 +86,15 @@ fetch (`https://dummyjson.com/recipes/search?q=${fin}`)
     });
 
 
-let compu = document.querySelector("#buscador_f");
-let anillo = document.querySelector("#buscador");
+let buscar2 = document.querySelector("#buscador_f");
+let buscar3 = document.querySelector("#buscador");
 
-compu.addEventListener("submit", function(event) {
-    if (anillo.value === "") {
+buscar2.addEventListener("submit", function(event) {
+    if (buscar3.value === "") {
         alert("Por favor escriba que desea buscar.");
         event.preventDefault();
     }
-    else if (anillo.value.length < 3) {
+    else if (buscar3.value.length < 3) {
         alert("Su busqueda tiene que tener al menos 3 caracteres para funcionar.");
         event.preventDefault();
     }});
