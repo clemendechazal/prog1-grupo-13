@@ -1,3 +1,14 @@
+let logo = document.querySelector(".logo");
+
+logo.addEventListener("mouseover", function () {
+    logo.style.width = "40%"; 
+})
+
+logo.addEventListener("mouseout", function () {
+    logo.style.width = "30%"; 
+    logo.style.height = "auto"; 
+});
+
 let buscador = document.getElementById("buscador")
 let form = document.querySelector("form")
 

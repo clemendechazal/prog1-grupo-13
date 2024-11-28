@@ -1,3 +1,13 @@
+let logo = document.querySelector(".logo");
+
+logo.addEventListener("mouseover", function () {
+    logo.style.width = "40%"; 
+})
+
+logo.addEventListener("mouseout", function () {
+    logo.style.width = "30%"; 
+    logo.style.height = "auto"; 
+});
 
 let homeMenu = document.getElementById("idhome")
 let categoriesMenu = document.getElementById("idcategories")
@@ -62,7 +72,7 @@ fetch (`https://dummyjson.com/recipes/search?q=${fin}`)
                     <article class = "article_index" "flex">
                         <img src="${recetas[i].image}" alt="${recetas[i].name}">
                         <h3>${recetas[i].name}</h3>
-                        <a class = "a_index" href="./receta.html?idReceta=${recetas[i].id}">Ver Detalle</a>
+                        <a class = "a_index" href="./recetas.html?idReceta=${recetas[i].id}">Ver Detalle</a>
                     </article>
                     `;
             }

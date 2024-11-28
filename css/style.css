@@ -44,7 +44,7 @@ body {
 }
 
 .logo {
-    border-radius: 0px;
+    border-radius: 95%;
 }
 
 .header2 {
@@ -59,6 +59,20 @@ body {
     font-weight: 400;
     font-style: normal;
 }
+.lupa{
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 12px;
+    border: solid rgb(94 125 109);
+    background-color: rgb(94 125 109);
+    color: rgb(244 217 187);
+    text-decoration: underline;
+    margin-left: 2px;
+}
+
 .buscadorHeader{
     display: flex;
     flex-direction: row;
@@ -593,4 +607,15 @@ button {
         margin: 2px;
     }
 
+    .lista_ca {
+        text-decoration: underline;
+        color: rgb(244 217 187);
+        background-color: rgb(94 125 109);
+        margin: 10px;
+        border-radius: 8px;
+        width: 30%;
+        justify-content: center;
+        display: flex;
+        text-align: center;
+    }
 }
