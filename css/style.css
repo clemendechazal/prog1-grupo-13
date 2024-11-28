@@ -331,6 +331,8 @@ button {
 .titulo-caja {
     font-size: larger;
     align-items: center;
+    padding-top: 6%;
+
 }
 
 .personalemail{
