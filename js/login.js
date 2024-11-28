@@ -1,35 +1,28 @@
-let logo = document.querySelector(".logo");
 
+/**logo**/
+let logo = document.querySelector(".logo");
 logo.addEventListener("mouseover", function () {
     logo.style.width = "40%"; 
 })
-
 logo.addEventListener("mouseout", function () {
     logo.style.width = "30%"; 
     logo.style.height = "auto"; 
 });
 
-let buscador = document.getElementById("buscador")
-let form = document.querySelector("form")
 
-
-form.addEventListener('click', function (e) {
-    e.preventDefault();
-    let escrito = buscador.value
-
-    if (escrito === "") {
-        alert("Buscador vacío")
-
-    }
-    else if (escrito.length(escrito) <= 3) {
-        alert("Se necesitan mas de 3 caracteres")
-    }
-    else if (escrito !== "" && length(escrito) > 3) {
-        form.submit();
-    }
-
+/**boton**/
+let buttonLogin = document.querySelector("#buttonLogin")
+buttonLogin.addEventListener('mouseover', function(){ 
+    this.style.backgroundColor = 'rgb(244, 214, 187)'
+    this.style.color = 'rgb(94, 125, 109)'
+})
+buttonLogin.addEventListener('mouseout', function(){
+    this.style.backgroundColor = 'rgb(94, 125, 109)'
+    this.style.color = 'rgb(244, 214, 187)'
 })
 
+
+/** links header **/
 let homeMenu = document.getElementById("idhome")
 let categoriesMenu = document.getElementById("idcategories")
 let loginMenu = document.getElementById("idlogin")
@@ -72,7 +65,28 @@ registerMenu.addEventListener('mouseout', function(){
 })
 
 
+/**formularios**/
 
+let buscador = document.getElementById("buscador")
+let form = document.querySelector("form")
+
+
+form.addEventListener('click', function (e) {
+    e.preventDefault();
+    let escrito = buscador.value
+
+    if (escrito === "") {
+        alert("Buscador vacío")
+
+    }
+    else if (escrito.length(escrito) <= 3) {
+        alert("Se necesitan mas de 3 caracteres")
+    }
+    else if (escrito !== "" && length(escrito) > 3) {
+        form.submit();
+    }
+
+})
 
 let personaEmail = document.getElementById("emailInput")
 let personaPassword = document.getElementById("passwordInput")
@@ -115,6 +129,8 @@ yaTengoCuenta.addEventListener('mouseout', function(){
     this.style.textDecoration = "none"
 })
 
+
+/**resultado de busqueda **/
 
 let buscar2 = document.querySelector("#buscador_f");
 let buscar3 = document.querySelector("#buscador");

@@ -1,14 +1,26 @@
+/**logo**/
 let logo = document.querySelector(".logo");
-
 logo.addEventListener("mouseover", function () {
     logo.style.width = "40%"; 
 })
-
 logo.addEventListener("mouseout", function () {
     logo.style.width = "30%"; 
     logo.style.height = "auto"; 
 });
 
+/** boton cargar mas **/
+let cargarMas = document.querySelector("#cargarMas-index")
+cargarMas.addEventListener('mouseover', function(){ 
+    this.style.backgroundColor = 'rgb(244, 214, 187)'
+    this.style.color = 'rgb(94, 125, 109)'
+})
+cargarMas.addEventListener('mouseout', function(){
+    this.style.backgroundColor = 'rgb(94, 125, 109)'
+    this.style.color = 'rgb(244, 214, 187)'
+})
+
+
+/** links header **/
 let homeMenu = document.getElementById("idhome")
 let categoriesMenu = document.getElementById("idcategories")
 let loginMenu = document.getElementById("idlogin")
@@ -51,7 +63,7 @@ registerMenu.addEventListener('mouseout', function(){
 })
 
 
-
+/**codigo index**/
 
 let lista = document.querySelector(".lista-index");
 let formulario = document.querySelector("form");
@@ -89,6 +101,9 @@ document.querySelector('#cargarMas-index').addEventListener('click', function() 
     cargarRecetas(url)
 });
 
+
+
+/**resultado de busqueda **/
 
 let buscar2 = document.querySelector("#buscador_f");
 let buscar3 = document.querySelector("#buscador");

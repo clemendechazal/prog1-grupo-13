@@ -1,14 +1,16 @@
-let logo = document.querySelector(".logo");
 
+/**logo**/
+let logo = document.querySelector(".logo");
 logo.addEventListener("mouseover", function () {
     logo.style.width = "40%"; 
 })
-
 logo.addEventListener("mouseout", function () {
     logo.style.width = "30%"; 
     logo.style.height = "auto"; 
 });
 
+
+/** links header **/
 let homeMenu = document.getElementById("idhome")
 let categoriesMenu = document.getElementById("idcategories")
 let loginMenu = document.getElementById("idlogin")
@@ -51,7 +53,7 @@ registerMenu.addEventListener('mouseout', function(){
 })
 
 
-
+/**codigo de recetas**/
 
 let qs = location.search;
 let qsObj = new URLSearchParams(qs);
@@ -88,6 +90,9 @@ fetch(url)
         console.log(err); 
     });
 
+
+
+/**resultado de busqueda **/
 
 let buscar2 = document.querySelector("#buscador_f");
 let buscar3 = document.querySelector("#buscador");
