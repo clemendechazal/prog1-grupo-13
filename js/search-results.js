@@ -56,7 +56,7 @@ registerMenu.addEventListener('mouseout', function(){
 /**codigo de resultado de busqueda**/
 let queryString = location.search;
 let params = new URLSearchParams(queryString);
-let query = params.get("query");
+let query = params.get("idsearch");
 
 fetch (`https://dummyjson.com/recipes/search?q=${query}`)
     .then (function(response) {
@@ -80,6 +80,7 @@ fetch (`https://dummyjson.com/recipes/search?q=${query}`)
             if (resultados === "") {
             resultados = `<h1 class="nohaytalresultado">No se encontraron resultados para la búsqueda.</h1>`;
             }
+
         busqueda.innerHTML = resultados;
     })
     .catch(function(error){
