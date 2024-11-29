@@ -156,7 +156,6 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
     width: 100%;
 
 }
@@ -170,7 +169,7 @@ body {
     list-style-type: none;
     text-decoration: none;
     width: 22%;
-    margin-bottom: 14px;
+    margin: 10px;
 }
 
 .a_index {
@@ -194,7 +193,6 @@ img {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
     width: 100%;
     margin-top: 25px;
 }
@@ -298,13 +296,13 @@ button {
     color:  rgb(244 217 187);
     list-style-type: none;
     text-decoration: underline;
+    margin: 5px;
 }
 
 .tags {
     list-style-type: none;
     display: flex;
     justify-content: center;
-    gap: 6px;
 }
 .sin-cuenta {
     display: flex;
@@ -398,7 +396,6 @@ button {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    gap: 10px;
 }
 
 .lista_categorias{
@@ -511,7 +508,15 @@ button {
         display: flex;
         justify-content: center;
         font-size: x-large;
-        padding: 0px 28px;
+        padding: 0px 0px;
+    }
+
+    .buscadorHeader {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 24px;
     }
 
     .header3 {
@@ -576,12 +581,11 @@ button {
         flex-direction: column;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 20px;
-        width: 100%;
+        width: 94%;
     }
 
+
     article {
-        background: rgb(94 125 109);
         border-radius: 8px;
         padding: 2px;
         color:  rgb(244 217 187);
@@ -599,8 +603,8 @@ button {
         list-style: none;
         list-style-type: none;
         text-decoration: none;
+        margin: 10px;
         width: 98%;
-        margin-bottom: 10px;
     }
 
 
@@ -625,10 +629,19 @@ button {
         background-color: rgb(94 125 109);
         margin: 10px;
         border-radius: 8px;
-        width: 30%;
+        width: 40%;
         justify-content: center;
         display: flex;
         text-align: center;
+    }
+
+    .lista_categorias {
+        background-color: rgb(94 125 109);
+        color: rgb(244 217 187);
+        width: 197px;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
     }
 
     .h1-index {
