@@ -7,7 +7,7 @@ h1 {
 }
 
 body {
-    background-image: url(../Imagenes/fondo.jpg);
+    background-image: url(../imagenes/fondo.jpg);
     font-family: "Work Sans", serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -472,7 +472,7 @@ button {
 
     /**body**/
     body {
-        background-image: url(../Imagenes/fondo.jpg);
+        background-image: url(../imagenes/fondo.jpg);
         font-family: "Work Sans", serif;
         font-optical-sizing: auto;
         font-weight: 400;
