@@ -53,7 +53,6 @@ registerMenu.addEventListener('mouseout', function(){
 })
 
 
-
 /**codigo de resultado de busqueda**/
 let queryString = location.search;
 let params = new URLSearchParams(queryString);
