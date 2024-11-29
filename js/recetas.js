@@ -71,15 +71,15 @@ fetch(url)
     .then(function(response) {
         return response.json();
     })
-    .then(function(results) {
-        img.src = results.image; 
-        name.innerText = `${results.name}`; 
-        instructions.innerText = `Instrucciones: ${results.instructions}`; 
-        cookTimeMinutes.innerText = `Tiempo de cocción: ${results.cookTimeMinutes} minutos`;
+    .then(function(data) {
+        img.src = data.image; 
+        name.innerText = `${data.name}`; 
+        instructions.innerText = `Instrucciones: ${data.instructions}`; 
+        cookTimeMinutes.innerText = `Tiempo de cocción: ${data.cookTimeMinutes} minutos`;
         
         listaReceta = "";
-        for (let i = 0; i < results.tags.length; i++) {
-            const meal = results.tags[i];
+        for (let i = 0; i < data.tags.length; i++) {
+            let meal = data.tags[i];
             listaReceta += `
             
             <li><a href="./category.html?idTag=${meal}">${meal}</a></li>`

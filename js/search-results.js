@@ -57,9 +57,9 @@ registerMenu.addEventListener('mouseout', function(){
 /**codigo de resultado de busqueda**/
 let queryString = location.search;
 let params = new URLSearchParams(queryString);
-let fin = params.get("query");
+let query = params.get("query");
 
-fetch (`https://dummyjson.com/recipes/search?q=${fin}`)
+fetch (`https://dummyjson.com/recipes/search?q=${query}`)
     .then (function(response) {
             return response.json();
     })
@@ -67,7 +67,7 @@ fetch (`https://dummyjson.com/recipes/search?q=${fin}`)
         let busqueda = document.querySelector(".explorar");
         let resultado2 = document.querySelector(".mensaje");
         let resultados = "";
-        resultado2.innerText = `Resultados de búsqueda de: ${fin}`
+        resultado2.innerText = `Resultados de búsqueda de: ${query}`
             for (let i = 0; i < data.recipes.length; i++) {
                 let recetas = data.recipes;
                     resultados += `

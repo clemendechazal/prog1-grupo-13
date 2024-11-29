@@ -57,11 +57,10 @@ registerMenu.addEventListener('mouseout', function(){
 let categorias = document.querySelector(".categorias");
 
 fetch('https://dummyjson.com/recipes/tags')
-    .then(function (res) {
-        return res.json()
+    .then(function(response) {
+        return response.json();
     })
     .then(function (data) {
-        console.log(data);
         let contenido = "";
          
         for (let i = 0; i < data.length; i++) {

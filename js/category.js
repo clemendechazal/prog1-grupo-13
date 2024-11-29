@@ -71,7 +71,6 @@ fetch(url)
         return response.json();
     })
     .then(function(data) {
-        console.log(data.recipes); 
         let contenido = "";
         let recetas = data.recipes; 
         

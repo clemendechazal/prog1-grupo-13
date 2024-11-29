@@ -90,7 +90,7 @@ button.addEventListener('click', function () {
         mensajeErrorPassword.innerText = ""
     }
     if (checkBox.checked === false) {
-        alert("Por favor acepta términos y condiciones")
+        alert("Por favor acepte los términos y condiciones")
     }
 
     if (personaEmail.value !== "" && personaPassword.value !== "" && checkBox.checked === true) {
